@@ -1,40 +1,3 @@
-<style>
-.background-plc {
-    background-color: var(--vscode-textCodeBlock-background);
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.comment-plc {
-    color: #1aa8bb;
-}
-.keyword1-control-plc{
-    color: #0084ff;
-    font-weight: bold;
-}
-.keyword2-control-plc{
-    color: #00ff37;
-    font-weight: bold;
-}
-.vars-plc{
-    color: #9900ff;
-    margin-right: 10px;
-}
-.labels-plc{
-    color: #00ffea;
-}
-.comment-plc{
-    color: #1aa8bb;
-}
-.registers-plc{
-    color: #ffd000;
-}
-.numbers-plc{
-    color: #ff7700da;
-}
-</style>
-
-
 # Variables
 
 When a symbolic name is given to a register inside a .plc file and this file is included inside another .plc file using a #funcdec statement, this symbolic will not be included in the scope of the file that has the #funcdec statement. 
@@ -100,3 +63,41 @@ For example, let a function block called TEST be defined inside a file called FB
 <br />
 
 When this file is included with a #funcdec statement, instances of the TEST function block can be made between VAR-END_VAR but symbolic varibles like FBTest1 are left out of this file's scope so they cannot be used.
+
+
+
+<style>
+.background-plc {
+    background-color: var(--vscode-textCodeBlock-background);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.comment-plc {
+    color: #1aa8bb;
+}
+.keyword1-control-plc{
+    color: #0084ff;
+    font-weight: bold;
+}
+.keyword2-control-plc{
+    color: #00ff37;
+    font-weight: bold;
+}
+.vars-plc{
+    color: #9900ff;
+    margin-right: 10px;
+}
+.labels-plc{
+    color: #00ffea;
+}
+.comment-plc{
+    color: #1aa8bb;
+}
+.registers-plc{
+    color: #ffd000;
+}
+.numbers-plc{
+    color: #ff7700da;
+}
+</style>
